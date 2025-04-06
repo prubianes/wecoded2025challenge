@@ -1,0 +1,449 @@
+:root {
+    --blue: #4531EA;
+    --green: #CCEA71;
+    --purple: #9D00E5;
+    --dark: #1A1A1A;
+    --light: #F5F5F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav {
+    margin-left: auto; /* This pushes the nav to the right */
+    padding-right: 20px; /* Add some padding on the right */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 600;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.6rem;
+}
+
+nav ul li a:hover {
+    color: var(--blue);
+}
+
+.hero {
+    background-image: url('../assets/gradient.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn.primary {
+    background-color: var(--purple);
+    color: var(--dark);
+}
+
+.btn.primary:hover {
+    background-color: #b8d55f;
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 5rem 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: var(--blue);
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.story-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+}
+
+.story-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.story-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.story-button-container {
+    margin-top: auto;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.story-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.story-author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.author-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.loading {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Menu Toggle Button - Make sure it's visible on mobile */
+.menu-toggle {
+    display: none;  /* Hidden by default on desktop */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--dark);
+    border-radius: 3px;
+}
+
+/* Resources Section Styling */
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.resource-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.resource-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.resource-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.resource-card h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--purple);
+}
+
+.resource-card p {
+    margin-bottom: 1.2rem;
+    color: #555;
+}
+
+.resource-card ul {
+    list-style-type: none;
+}
+
+.resource-card ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.resource-card ul li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--blue);
+}
+
+.resource-card ul li a {
+    text-decoration: none;
+    color: var(--blue);
+    transition: color 0.2s;
+}
+
+.resource-card ul li a:hover {
+    color: var(--purple);
+    text-decoration: underline;
+}
+
+/* About Section Styling */
+.about {
+    background-color: #f9f9f9;
+    padding: 5rem 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.about-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.about-card h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--purple);
+}
+
+.about-card p {
+    margin-bottom: 1rem;
+}
+
+.about-highlight {
+    background: linear-gradient(135deg, rgba(69, 49, 234, 0.1), rgba(157, 0, 229, 0.1));
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about-highlight h3 {
+    color: var(--blue);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-cta {
+    text-align: center;
+}
+
+/* Responsive design for about section */
+@media (max-width: 768px) {
+    header .container {
+        padding: 1rem 15px;
+    }
+
+    .menu-toggle {
+        display: flex;  /* Show on mobile */
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: white;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        transition: right 0.3s ease;
+        z-index: 100;
+        padding-top: 70px;
+        margin-left: 0;
+        padding-right: 0;
+    }
+    
+    nav.active {
+        right: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    nav ul li {
+        margin: 0 0 1.5rem 0;
+    }
+    
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+    
+    .nav-icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-right: 1rem;
+    }
+    
+    .nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 99;
+    }
+    
+    .nav-overlay.active {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    nav ul li {
+        margin-left: 1rem;
+    }
+
+    .resources-grid {
+        gap: 1.5rem;
+    }
+
+    .about-grid {
+        gap: 1.5rem;
+    }
+    
+    .about-highlight {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    .logo img {
+        height: 32px;
+    }
+}

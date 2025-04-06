@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeCoded - Celebrating Diversity in Tech</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="WeCoded Logo">
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav id="mainNav">
+                <ul>
+                    <li>
+                        <a href="#about">
+                            <img src="assets/icon1.png" alt="" class="nav-icon">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#stories">
+                            <img src="assets/icon1.png" alt="" class="nav-icon">
+                            Stories
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#resources">
+                            <img src="assets/icon1.png" alt="" class="nav-icon">
+                            Resources
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-overlay" id="navOverlay"></div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Celebrating Diverse Voices in Tech</h1>
+            <p>A permanent home for our annual WeCoded celebration</p>
+            <a href="#stories" class="btn primary">Explore Stories</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About WeCoded</h2>
+            
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <img src="assets/icon1.png" alt="History Icon">
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>WeCoded is an annual celebration highlighting the achievements and stories of underrepresented groups in tech. Launched alongside International Women's Day, WeCoded creates space for diverse voices to share their journeys and inspire others.</p>
+                    <p>We believe that representation matters, and that by elevating diverse stories, we can inspire the next generation of technologists from all backgrounds and identities.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="about-icon">
+                        <img src="assets/icon1.png" alt="History Icon">
+                    </div>
+                    <h3>Our History</h3>
+                    <p>WeCoded began as an extension of the SheCoded movement, which started in 2018 as a way to celebrate International Women's Day by sharing stories from women in technology.</p>
+                    <p>As the initiative evolved, it expanded to welcome and amplify voices from all underrepresented groups in tech, resulting in the inclusive WeCoded celebration we know today.</p>
+                </div>
+                
+                <div class="about-card">
+                    <div class="about-icon">
+                        <img src="assets/icon1.png" alt="Impact Icon">
+                    </div>
+                    <h3>Our Impact</h3>
+                    <p>Each year, hundreds of developers share their personal journeys, challenges, and triumphs through WeCoded posts. These stories have reached thousands of readers, creating a ripple effect of inspiration throughout the tech community.</p>
+                    <p>WeCoded stories have helped people find mentors, connect with like-minded individuals, and most importantly, feel less alone in their tech journey.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="stories" class="stories">
+        <div class="container">
+            <h2>Featured Stories</h2>
+            <div class="stories-grid" id="stories-container">
+                <!-- Stories will be loaded dynamically here -->
+                <div class="loading">Loading stories...</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2>Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <img src="assets/icon1.png" alt="Communities Icon">
+                    </div>
+                    <h3>Communities</h3>
+                    <p>Connect with supportive tech communities focused on diversity and inclusion.</p>
+                    <ul>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <img src="assets/icon1.png" alt="Learning Icon">
+                    </div>
+                    <h3>Learning Resources</h3>
+                    <p>Educational content to enhance your skills and knowledge.</p>
+                    <ul>
+                        <li><a href="#">Free Coding Bootcamps</a></li>
+                        <li><a href="#">Inclusive Tech Tutorials</a></li>
+                        <li><a href="#">Accessibility Guidelines</a></li>
+                        <li><a href="#">Mentorship Programs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">
+                        <img src="assets/icon1.png" alt="Events Icon">
+                    </div>
+                    <h3>Events & Conferences</h3>
+                    <p>Upcoming events celebrating diversity in the tech industry.</p>
+                    <ul>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                        <li><a href="#">Link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 WeCoded | Created by <a href="https://pablorubianes.com" target="_blank">Pablo Rubianes</a> for the dev.to challenge</p>
+        </div>
+    </footer>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>
